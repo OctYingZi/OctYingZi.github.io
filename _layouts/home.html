@@ -29,19 +29,36 @@ layout: compress
                         	<p style="font-size:1rem;font-weight:300">{{ site.bio }}</p>
 			            </a>
                     </h3>
-                    {% include social-links.html %}
+                    <!--{% include social-links.html %}-->
                   <hr class="hr-line">
                   <h3 class="title">
-                         <a class="btn zoombtn" href="{{ site.url }}/about">
-                         About
-                         </a>
-                         <a class="btn zoombtn" href="{{ site.url }}/posts">
-                         Posts
-                         </a>
-                         <a class="btn zoombtn" href="{{ site.url }}/projects">
-                         Projects
-                         </a>
+                    <div class="btn textcontainer">
+                      <a class="particletext bubbles" href="{{ site.url }}/about">关于我</a>
+                    </div>
+                    <div class="btn textcontainer">
+                      <a class="particletext confetti" href="{{ site.url }}/work">经历</a>
+                    </div>
+                    <div class="btn textcontainer">
+                      <a class="particletext hearts" href="{{ site.url }}/projects">项目</a>
+                    </div>
+                    <div class="btn textcontainer">
+                      <a class="particletext lines" href="{{ site.url }}/contact">联系我</a>
+                    </div>
+                         <!--<a class="btn zoombtn" href="{{ site.url }}/about">-->
+                         <!--关于我-->
+                         <!--</a>-->
+                         <!--<a class="btn zoombtn" href="{{ site.url }}/work">-->
+                         <!--经历-->
+                         <!--</a>-->
+                         <!--<a class="btn zoombtn" href="{{ site.url }}/projects">-->
+                         <!--项目-->
+                         <!--</a>-->
+                         <!--<a class="btn zoombtn" href="{{ site.url }}/contact">-->
+                         <!--联系我-->
+                        <!--</a>-->
                  </h3>
+              <hr class="hr-line">
+
             </div>
         </div>
     </header>
