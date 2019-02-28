@@ -15,6 +15,55 @@ $(function() {
   $(".content").fitVids();
 });
 
+//timeline
+$(function(){
+
+    window.sr = ScrollReveal();
+
+    if ($(window).width() < 768) {
+        //
+        if ($('.timeline-content').hasClass('js--fadeInLeft')) {
+            $('.timeline-content').removeClass('js--fadeInLeft').addClass('js--fadeInRight');
+        }
+
+        // sr.reveal('.js--fadeInLeft', {
+        //     origin: 'left',
+        //     distance: '300px',
+        //     easing: 'ease-in-out',
+        //     duration: 800,
+        // });
+        //
+        //
+        // sr.reveal('.js--fadeInRight', {
+        //     origin: 'right',
+        //     distance: '300px',
+        //     easing: 'ease-in-out',
+        //     duration: 800,
+        // });
+
+    } else {
+
+        sr.reveal('.js--fadeInLeft', {
+            origin: 'left',
+            distance: '300px',
+            easing: 'ease-in-out',
+            duration: 800,
+        });
+
+        sr.reveal('.js--fadeInRight', {
+            origin: 'right',
+            distance: '300px',
+            easing: 'ease-in-out',
+            duration: 800,
+        });
+
+    }
+
+
+
+});
+
+
 // All others
 $(document).ready(function() {
     // zoom in/zoom out animations
@@ -55,6 +104,7 @@ $(document).ready(function() {
     mainClass: 'mfp-fade'
   });
 
+	//
     function initparticles() {
         bubbles();
         hearts();
