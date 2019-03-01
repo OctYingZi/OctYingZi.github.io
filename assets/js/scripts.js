@@ -179,8 +179,8 @@ $(document).ready(function() {
         return Math.floor( Math.random() * (n - m + 1) ) + m;
     }
 
-    initparticles();
 
+    initparticles();
 
 
 });

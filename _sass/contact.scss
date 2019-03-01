@@ -1,0 +1,20 @@
+.contact-content{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .contact-icon{
+    margin: 40px 55px;
+    text-align: center;
+
+    i{
+      font-size: 30px;
+      text-align: center;
+    }
+
+    .title{
+      font-size: 20px;
+      font-weight: 400;
+    }
+  }
+}
