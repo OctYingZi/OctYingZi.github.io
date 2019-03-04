@@ -152,13 +152,23 @@
   display: inline-block;
   padding: 4px 6px;
   background: rgb(248,248,248);
+  color:#ff5050 !important
+}
+
+.time-wrapper{
+  a:visited {
+    color: #ff5050;
+  }
+  a:link {
+    color: #ff5050;
+  }
 }
 
 .desc {
   margin: 1em 0.75em 0 0;
 
-  font-size: 0.77777em;
-  font-style: italic;
+  font-size: 1em;
+  //font-style: italic;
   line-height: 1.5em;
 }
 
